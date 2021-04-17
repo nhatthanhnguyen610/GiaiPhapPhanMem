@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="action_home">Home</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_cart">Search</string>
+    <string name="action_my_page">My page</string>
+</resources>

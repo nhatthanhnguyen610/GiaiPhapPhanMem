@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/avatar2"
+        app:civ_border_color="#434343"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/profileImage">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hana"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+        
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2h"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/profileImage"
+        android:background="#2196F3"
+        android:text="I need help"
+        android:gravity="center"
+        android:textSize="40dp"/>
+    
+    <LinearLayout
+        android:id="@+id/group_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_donate"
+            android:text="Donate"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_comment"
+            android:text="Comment"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_report"
+            android:text="report"/>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage1"
+        android:layout_below="@id/group_bt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/avatar3"
+        app:civ_border_color="#434343"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_below="@id/group_bt"
+        android:layout_toRightOf="@+id/profileImage1">
+
+        <TextView
+            android:id="@+id/nameTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jone"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/timeTv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3h"
+            android:textColor="#000"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/profileImage1"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#E91E63"
+        android:text="Please, help me"
+        android:gravity="center"
+        android:textSize="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView1"
+        android:gravity="center">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_donate1"
+            android:text="Donate"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_comment1"
+            android:text="Comment"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_report1"
+            android:text="report"/>
+    </LinearLayout>
+
+
+        
+
+</RelativeLayout>
