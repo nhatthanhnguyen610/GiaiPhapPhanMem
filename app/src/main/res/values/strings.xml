@@ -3,4 +3,8 @@
     <string name="action_hangHoa">Hàng hóa</string>
     <string name="action_thanhToan">Thanh toán</string>
     <string name="action_thongKe">Thống kê</string>
+
+
+
+    <string name="chon_ngay">Chọn ngày</string>
 </resources>
