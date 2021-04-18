@@ -5,7 +5,7 @@
         android:title="@string/action_hangHoa"/>
 
     <item android:id="@+id/action_thanhToan"
-        android:icon="@drawable/baseline_search_black_18"
+        android:icon="@drawable/baseline_shopping_cart_black_18"
         android:title="@string/action_thanhToan"/>
 
     <item android:id="@+id/action_thongKe"

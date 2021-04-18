@@ -14,33 +14,12 @@ import androidx.fragment.app.Fragment;
 
 public class thanhToanFragment extends Fragment {
 
-    SearchView searchView;
-    ListView listView;
-
-
-
-    ArrayAdapter<String> arrayAdapter;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_thanh_toan, container, false);
-
-        String[] menuItems = {"Ha Noi", "Ho Chi Minh", "Da Nang", "Gia Lai", "Kon Tum", "An Giang", "Lang Son", "Lao Cai",
-        "Yen Bai", "Ha Tinh", "Hai Phong", "Hai Duong", "Dien Biwn", "Dak Lak","Phu Yen", "Ninh Thuan" };
-
-
-
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(
-                getActivity(),
-                android.R.layout.simple_list_item_1,
-                menuItems
-        );
-
-        listView.setAdapter(listViewAdapter);
-
         return view;
-
-
     }
+
+
 }
