@@ -15,11 +15,11 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new HomeFragment();
+                return new hangHoaFragment();
             case 1:
-                return new SearchFragment();
+                return new thanhToanFragment();
             default:
-                return new MyPageFragment();
+                return new thongKeFragment();
         }
     }
 

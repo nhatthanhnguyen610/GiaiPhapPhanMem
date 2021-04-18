@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.action_home:
+                    case R.id.action_hangHoa:
                         mViewPager.setCurrentItem(0);
                         break;
-                    case R.id.action_cart:
+                    case R.id.action_thanhToan:
                         mViewPager.setCurrentItem(1);
                         break;
-                    case R.id.action_my_page:
+                    case R.id.action_thongKe:
                         mViewPager.setCurrentItem(2);
                         break;
                 }
@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 switch (position){
                     case 0:
-                        mNavigationView.getMenu().findItem(R.id.action_home).setChecked(true);
+                        mNavigationView.getMenu().findItem(R.id.action_hangHoa).setChecked(true);
                         break;
                     case 1:
-                        mNavigationView.getMenu().findItem(R.id.action_cart).setChecked(true);
+                        mNavigationView.getMenu().findItem(R.id.action_thanhToan).setChecked(true);
                         break;
                     case 2:
-                        mNavigationView.getMenu().findItem(R.id.action_my_page).setChecked(true);
+                        mNavigationView.getMenu().findItem(R.id.action_thongKe).setChecked(true);
                         break;
                 }
             }

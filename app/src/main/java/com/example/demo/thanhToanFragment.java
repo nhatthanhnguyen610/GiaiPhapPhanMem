@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class SearchFragment extends Fragment {
+public class thanhToanFragment extends Fragment {
 
     SearchView searchView;
     ListView listView;
@@ -24,12 +24,12 @@ public class SearchFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.fragment_thanh_toan, container, false);
 
         String[] menuItems = {"Ha Noi", "Ho Chi Minh", "Da Nang", "Gia Lai", "Kon Tum", "An Giang", "Lang Son", "Lao Cai",
         "Yen Bai", "Ha Tinh", "Hai Phong", "Hai Duong", "Dien Biwn", "Dak Lak","Phu Yen", "Ninh Thuan" };
 
-        ListView listView = view.findViewById(R.id.list);
+
 
         ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(
                 getActivity(),
